@@ -1,14 +1,27 @@
-let __$$app$$__ = __$$hmAppManager$$__.currentApp;
-let __$$module$$__ = __$$app$$__.current;
-__$$module$$__.module = DeviceRuntimeCore.WatchFace({
-  onInit() {
+(() => {
+    var __$$app$$__
+        = __$$hmAppManager$$__.currentApp;
 
-    // Create widgets, timers, call functions here
+    var __$$module$$__
+        = __$$app$$__.current;
 
-  },
-  onDestroy() {
-
-    // On destroy, remove if not required
-
-  }
-});
+    __$$module$$__.module
+        = DeviceRuntimeCore.WatchFace(
+        {
+            onInit()
+            {
+            },
+            build()
+            {
+            },
+            onResume()
+            {
+            },
+            onPause()
+            {
+            },
+            onDestroy()
+            {
+            }
+        });
+})();
