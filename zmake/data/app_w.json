@@ -1,29 +1,79 @@
 {
-  "configVersion": "v2",
-  "app": {
-    "appId": 1,
-    "appName": "WatchfaceName",
-    "appType": "watchface",
-    "version": { "code": 1, "name": "1.0" },
-    "vender": "",
-    "description": "",
-    "icon": "preview.png"
-  },
-  "permissions": ["gps"],
-  "runtime": {
-    "apiVersion": {
-      "compatible": "1.0.0",
-      "target": "1.0.1",
-      "minVersion": "1.0.0"
+    "configVersion": "v2",
+    "app": {
+        "appId": 1,
+        "appName": "WatchfaceName",
+        "appType": "watchface",
+        "version": {
+            "code": 1,
+            "name": "1.0.0"
+        },
+        "icon": "preview.png",
+        "vender": "",
+        "description": ""
+    },
+    "permissions": [
+        "gps"
+    ],
+    "runtime": {
+        "apiVersion": {
+            "compatible": "1.0.0",
+            "target": "1.0.1",
+            "minVersion": "1.0.0"
+        }
+    },
+    "i18n": {
+        "en-US": {
+            "icon": "preview.png",
+            "appName": "WatchfaceName"
+        }
+    },
+    "defaultLanguage": "en-US",
+    "debug": false,
+    "module": {
+        "watchface": {
+            "path": "watchface/index",
+            "main": 1,
+            "editable": 1,
+            "lockscreen": 0,
+            "hightCost": 0
+        }
+    },
+    "platforms": [
+        {
+            "name": "Xiaomi Smart Band 7 NFC",
+            "deviceSource": 260
+        },
+        {
+            "name": "Xiaomi Smart Band 7 NFC",
+            "deviceSource": 261
+        },
+        {
+            "name": "Xiaomi Smart Band 7",
+            "deviceSource": 262
+        },
+        {
+            "name": "Xiaomi Smart Band 7",
+            "deviceSource": 263
+        },
+        {
+            "name": "Xiaomi Smart Band 7",
+            "deviceSource": 264
+        },
+        {
+            "name": "Xiaomi Smart Band 7",
+            "deviceSource": 265
+        },
+        {
+            "name": "Xiaomi Smart Band 7",
+            "deviceSource": 266
+        }
+    ],
+    "designWidth": 192,
+    "packageInfo": {
+        "mode": "production",
+        "timeStamp": 1,
+        "expiredTime": 1,
+        "zpm": "3.0.7"
     }
-  },
-  "module": {
-    "watchface": {
-      "path": "watchface/index",
-      "main": 1,
-      "editable": 0,
-      "lockscreen": 1,
-      "hightCost": 0
-    }
-  }
 }
